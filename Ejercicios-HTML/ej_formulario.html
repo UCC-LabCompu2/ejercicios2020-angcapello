@@ -17,74 +17,52 @@
 <!--Si tienes dudas de como hacer un formulario, puedes consultar:
     https://www.w3schools.com/html/tryit.asp?filename=tryhtml_elem_output-->
 
-<h3>Suscríbase a Nuestro Portal de Noticias! Crear una cuenta es rápido!</h3>
+<h3>¡Suscríbase a Nuestro Portal de Noticias! Crear una cuenta es rápido!</h3>
 <form id="formulario_suscripción">
     <p>
-        <label>
-            Nombre:
-            <<input type="text" name="nombre" placeholder="Ingrese Nombre">
-        </label>
+        <label for="nombre">Nombre:</label> <input type="text" name="nombre" placeholder="Ingrese Nombre" id="nombre">
     </p>
     <p>
-        <label>
-            Apellido: <input type="text" name="apellido" placeholder="Ingrese Apellido">
-        </label>
+        <label for="apellido">Apellido:</label> <input type="text" name="apellido" placeholder="Ingrese Apellido" id="apellido">
     </p>
     <p>
-        <label>
-            Sexo:
-            Masculino <input type="radio" name="sexo" value="masculino">
-            Femenino <input type="radio" name="sexo" value="femenino">
-        </label>
+        Sexo:
+        <label for="masculino">Masculino</label> <input type="radio" name="sexo" value="masculino" id="masculino">
+        <label for="femenino">Femenino</label> <input type="radio" name="sexo" value="femenino" id="femenino">
     </p>
     <p>
-        <label>
-            Edad: <input type="number" name="edad" placeholder="Ingrese Edad">
-        </label>
+        <label for="edad">Edad:</label> <input type="number" name="edad" placeholder="Ingrese Edad" id="edad">
     </p>
     <p>
-        <label>
-            Email: <input type="email" name="email" placeholder="email@dominio.com">
-        </label>
+        <label for="email">Email:</label> <input type="email" name="email" placeholder="email@dominio.com" id="email">
     </p>
     <p>
-        <label>
-            Usuario:<input type="text" name="usuario" placeholder="Ingrese Usuario">
-        </label>
+        <label for="usuario">Usuario:</label> <input type="text" name="usuario" placeholder="Ingrese Usuario" id="usuario">
     </p>
     <p>
-        <label>
-            Password: <input type="password" name="pass" placeholder="Ingrese Contraseña">
-        </label>
+        <label for="contraseña">Password:</label> <input type="password" name="pass" placeholder="Ingrese Contraseña" id="contraseña">
+
     </p>
     <p>
-        <label>
-            Confirmar Password: <input type="password" name="confirmar pass" placeholder="Reingrese Contraseña">
-        </label>
+        <label for="reingrese contraseña">Confirmar Password:</label> <input type="password" name="confirmar pass" placeholder="Reingrese Contraseña" id="reingrese contraseña">
     </p>
     <p>
-        <label>
-            Tipo de servicio:
-            Free <input type="checkbox" name="tipo de servicio" value="free"> /
-            Standard <input type="checkbox" name="tipo de servicio" value="standard"> /
-            Premium<input type="checkbox" name="tipo de servicio" value="premium">
-        </label>
+        Tipo de servicio:
+        <label for="Free">Free</label>  <input type="checkbox" name="tipo de servicio" value="free" id="Free"> /
+        <label for="Standard">Standard</label>  <input type="checkbox" name="tipo de servicio" value="standard" id="Standard"> /
+        <label for="Premium">Premium</label>  <input type="checkbox" name="tipo de servicio" value="premium" id="Premium">
     </p>
     <p>
-        <label>
-            Tema:
-            <select>
-                <option>Política</option>
-                <option>Negocios</option>
-                <option>Tecnología</option>
-                <option>Salud</option>
-            </select>
-        </label>
+        <label for="tema">Tema:</label>
+        <select id="tema">
+            <option value="política">Política</option>
+            <option value="negocios">Negocios</option>
+            <option value="tecnología">Tecnología</option>
+            <option value="salud">Salud</option>
+        </select>
     </p>
     <p>
-        <label>
-            Agregue un comentario: <textarea></textarea>
-        </label>
+        <label for="comentario">Agregue un comentario:</label> <textarea id="comentario"></textarea>
     </p>
     <p>
         <label>
