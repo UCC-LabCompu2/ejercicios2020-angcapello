@@ -4,20 +4,21 @@
     <meta charset="UTF-8">
     <title>Canvas con Circulo y Cuadrado</title>
     <link href="https://fonts.googleapis.com/css?family=Inknut+Antiqua" rel="stylesheet">
-    <link href="miEstilo.css" type="text/css" rel="stylesheet">
+    <link href="miEstilo.css" rel="stylesheet" type="text/css">
 </head>
 
 <body>
 <h1>Canvas 3</h1>
-<p>Ejercicio: Dibujar  la imagen 'auto.png' en el canvas desde la posición pasada por parámetro. La función debe llamarse al presionar el boton.</p>
+<p>Ejercicio: Dibujar la imagen 'auto.png' en el canvas desde la posición pasada por parámetro. La función debe llamarse
+    al presionar el boton.</p>
 
 <div class="centrado div-conver">
     <form>
         <p>
-            <label for="posicionX"> X</label> = <input id="posicionX" type="text" name="inp_x">
+            <label for="posicionX"> X</label> = <input id="posicionX" name="inp_x" type="text">
         </p>
         <p>
-            <label for="posicionY"> Y</label> = <input id="posicionY" type="text" name="inp_y">
+            <label for="posicionY"> Y</label> = <input id="posicionY" name="inp_y" type="text">
         </p>
         <button>
             Dibujar!
@@ -25,7 +26,7 @@
     </form>
 </div>
 
-<canvas id="myCanvas" class="ejer">
+<canvas class="ejer" id="myCanvas">
     Tu navegador no soporta el tag de HTML5 canvas.
 </canvas>
 

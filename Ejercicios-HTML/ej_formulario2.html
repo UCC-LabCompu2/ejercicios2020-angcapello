@@ -6,41 +6,73 @@
     <style>
         form {
             display: block;
-            margin-top: 0em;
+            margin-top: 0;
         }
     </style>
 </head>
 <body>
-<!--Cree un Formulario con los campos que se proponen a continuacion-->
+<!--Cree un Formulario con los campos que se proponen a continuación-->
 <!--Agregue el atributo legend-->
 
-<h3>Suscribase a Nuestro Portal de Noticias! Crear una cuenta es rápido!</h3>
-<div>
-    <form>
-        Nombre: <input type="text"> <br>
-        Apellido: <input type="text"> <br>
-        Sexo: Masculino <input type="radio" name="sexo" value="Masculino"> Femenino <input type="radio" name="sexo" value="Femenino"> <br>
-        Edad: <input type="number"> <br>
-        Email: <input type="email"> <br>
-        Usuario: <input type="text"> <br>
-        Password: <input type="password"> <br>
-        Confirmar Password: <input type="password"> <br>
+<h3>¡Suscríbase a Nuestro Portal de Noticias! Crear una cuenta es rápido!</h3>
+<form id="formulario_suscripción">
+    <p>
+        <label for="nombre">Nombre:</label> <input id="nombre" name="nombre" placeholder="Ingrese Nombre" type="text">
+    </p>
+    <p>
+        <label for="apellido">Apellido:</label> <input id="apellido" name="apellido" placeholder="Ingrese Apellido"
+                                                       type="text">
+    </p>
+    <p>
+        Sexo:
+        <label for="masculino">Masculino</label> <input id="masculino" name="sexo" type="radio" value="masculino">
+        <label for="femenino">Femenino</label> <input id="femenino" name="sexo" type="radio" value="femenino">
+    </p>
+    <p>
+        <label for="edad">Edad:</label> <input id="edad" name="edad" placeholder="Ingrese Edad" type="number">
+    </p>
+    <p>
+        <label for="email">Email:</label> <input id="email" name="email" placeholder="email@dominio.com" type="email">
+    </p>
+    <p>
+        <label for="usuario">Usuario:</label> <input id="usuario" name="usuario" placeholder="Ingrese Usuario"
+                                                     type="text">
+    </p>
+    <p>
+        <label for="contraseña">Password:</label> <input id="contraseña" name="pass" placeholder="Ingrese Contraseña"
+                                                         type="password">
 
-        Tipo de servicio: Free <input type="checkbox"> / Standard <input type="checkbox">/ Premium <input type="checkbox"> <br>
-        Tema:
-        <select>
-            <option>Política</option>
-            <option>Negocios</option>
-            <option>Tecnología</option>
-            <option>Salud</option>
-        </select><br>
-
-        Agregue un comentario:
-        <textarea></textarea> <br>
-
-        <button>Boton de Enviar</button>
-
-    </form>
-</div>
+    </p>
+    <p>
+        <label for="reingrese contraseña">Confirmar Password:</label> <input id="reingrese contraseña" name="confirmar pass"
+                                                                             placeholder="Reingrese Contraseña"
+                                                                             type="password">
+    </p>
+    <p>
+        Tipo de servicio:
+        <label for="Free">Free</label> <input id="Free" name="tipo de servicio" type="checkbox" value="free"> /
+        <label for="Standard">Standard</label> <input id="Standard" name="tipo de servicio" type="checkbox"
+                                                      value="standard"> /
+        <label for="Premium">Premium</label> <input id="Premium" name="tipo de servicio" type="checkbox"
+                                                    value="premium">
+    </p>
+    <p>
+        <label for="tema">Tema:</label>
+        <select id="tema">
+            <option value="política">Política</option>
+            <option value="negocios">Negocios</option>
+            <option value="tecnología">Tecnología</option>
+            <option value="salud">Salud</option>
+        </select>
+    </p>
+    <p>
+        <label for="comentario">Agregue un comentario:</label> <textarea id="comentario"></textarea>
+    </p>
+    <p>
+        <label>
+            <button type="button">Botón de Enviar</button>
+        </label>
+    </p>
+</form>
 </body>
 </html>
